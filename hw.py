@@ -14,7 +14,7 @@ count_vowels("This is a longer response.")
 # Exercise 2
 
 def capitalize_names(names):
-    new_names = [name.title() for name in names]
+    new_names = [name.title() for name in names if len(name) >=4]
     print(new_names)
 
 names1 = ['connor', 'connor', 'bob', 'connor', 'evan', 'max', 'evan', 'bob', 'kevin']
@@ -24,7 +24,7 @@ capitalize_names(names1)
 # Bonus challenge :)
 
 def capitalize_some_names(names):
-    new_names = [name.title() for name in names if type(name) == str and name.lower() != 'bob' and name.lower() != 'max']
+    new_names = [name.title() for name in names if type(name) == str and len(name)>=4]
     print(new_names)
 
 names2 = ['connor', 'connor', 'bob', 'connor', 'evan', 'max', 'evan', 2, 2, 2, 3, 3, 4, 'bob', 'kevin']
